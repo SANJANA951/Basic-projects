@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Gride</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 15px;
+        }
+        .gallery-item{
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img{
+            width: 100%;
+            height: auto;
+            transition: transform 0.6s ease-in-out;
+        }
+        .gallery-item:hover img{
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .gallery{
+                grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25242262/26355890.jpeg?quality=90&strip=all&crop=7.8125,0,84.375,100" alt="image 1">
+        </div>
+        <!-- second image -->
+         <div class="gallery-item">
+            <img src="https://cdn.oneesports.gg/cdn-data/2021/12/Anime_SpyxFamily_Anya-1-1024x576.jpg" alt="image 2">
+         </div>
+         <!-- third image -->
+          <div class="gallery-item">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/jxgflow0/poster/w/4/a/medium-anime-naruto-sword-ninja-naruto-uzumaki-13-19-inches-original-imaeg638g5ugeakj.jpeg?q=20&crop=false" alt="image 3">
+          </div>
+          <!-- fourth image -->
+           <div class="gallery-item">
+            <img src="https://c4.wallpaperflare.com/wallpaper/736/747/739/anime-uchiha-itachi-sharingan-naruto-shippuuden-wallpaper-preview.jpg" alt="image 4">
+           </div>
+           <!-- five image -->
+           <div class="gallery-item">
+            <img src="https://preview.redd.it/why-do-a-lot-of-people-hate-obito-v0-hrcbo17bz11c1.jpg?auto=webp&s=c645e64f4c1900081d66cfaacd09093ea74599f9" alt="image 5">
+           </div>
+           <!-- six image -->
+            <div class="gallery-item">
+                <img src="https://c4.wallpaperflare.com/wallpaper/370/127/644/uchiha-sasuke-rinnegan-eternal-mangekyou-sharingan-naruto-shippuuden-wallpaper-preview.jpg" alt="image 6">
+            </div>
+
+    </div>
+    
+</body>
+</html>
